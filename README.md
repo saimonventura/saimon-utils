@@ -1,6 +1,6 @@
 # saimon-utils
 
-Utils craated for reuse
+Utils created for reuse
 
 ## Installation
 
@@ -8,14 +8,20 @@ Utils craated for reuse
 npm install saimon-utils
 ```
 
+or
+
+```sh
+yarn add saimon-utils
+```
+
 ## Usage
 
 ```js
-import SaimonUtils from "saimon-utils";
+import {formatCurrency} from "saimon-utils";
 
 // ...
 
-const result = await SaimonUtils.multiply(3, 7);
+const result = formatCurrency('123,4567');
 ```
 
 ## Contributing

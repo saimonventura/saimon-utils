@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import SaimonUtils from 'saimon-utils';
+import { formatCurrency } from 'saimon-utils';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<string | undefined>();
 
   React.useEffect(() => {
-    SaimonUtils.multiply(3, 7).then(setResult);
+    setResult(formatCurrency('3 7 , 9 7'));
   }, []);
 
   return (
